@@ -17,7 +17,7 @@
           "cssClass": "aum-column",
           "title": "AUM",
           "items": [
-            { "label": "Overall", "value": "$210.50M", "barPercentage": 90, "barClass": "" }
+            { "label": "Overall", "value": "$210.50M" }
           ]
         },
         {
@@ -25,10 +25,10 @@
           "cssClass": "asset-mix-column",
           "title": "Asset Mix",
           "items": [
-            { "label": "U.S. Equity", "value": "$105.25M", "barPercentage": 50, "barClass": "small-bar" },
-            { "label": "International Equity", "value": "$63.15M", "barPercentage": 30, "barClass": "small-bar" },
-            { "label": "Municipal Bond", "value": "$31.57M", "barPercentage": 15, "barClass": "small-bar" },
-            { "label": "Other Fixed Income", "value": "$10.53M", "barPercentage": 5, "barClass": "small-bar" }
+            { "label": "U.S. Equity", "value": "$105.25M" },
+            { "label": "International Equity", "value": "$63.15M" },
+            { "label": "Municipal Bond", "value": "$31.57M" },
+            { "label": "Other Fixed Income", "value": "$10.53M" }
           ]
         },
         {
@@ -36,10 +36,10 @@
           "cssClass": "morningstar-column",
           "title": "Morningstar Ownership",
           "items": [
-            { "label": "US Large-Cap Blend", "value": "$84.20M", "barPercentage": 40, "barClass": "small-bar" },
-            { "label": "Foreign Large-Cap Growth", "value": "$52.62M", "barPercentage": 25, "barClass": "small-bar" },
-            { "label": "Muni National Interm", "value": "$31.57M", "barPercentage": 15, "barClass": "small-bar" },
-            { "label": "Intermediate Core Bond", "value": "$10.53M", "barPercentage": 5, "barClass": "small-bar" }
+            { "label": "US Large-Cap Blend", "value": "$84.20M" },
+            { "label": "Foreign Large-Cap Growth", "value": "$52.62M" },
+            { "label": "Muni National Interm", "value": "$31.57M" },
+            { "label": "Intermediate Core Bond", "value": "$10.53M" }
           ]
         },
         {
@@ -47,8 +47,8 @@
           "cssClass": "sales-column",
           "title": "Sales",
           "items": [
-             { "label": "LY Sales", "value": "$45.00M", "barPercentage": 65, "barClass": "small-bar" },
-             { "label": "YTD Sales", "value": "$8.20M", "barPercentage": 15, "barClass": "small-bar" }
+             { "label": "LY Sales", "value": "$45.00M" },
+             { "label": "YTD Sales", "value": "$8.20M" }
           ]
         },
         {
@@ -56,8 +56,8 @@
           "cssClass": "ytd-vehicle-column",
           "title": "YTD Vehicle Sales",
           "items": [
-            { "label": "American Funds", "value": "$6.15M", "barPercentage": 12, "barClass": "small-bar" },
-            { "label": "SMA/CIT", "value": "$2.05M", "barPercentage": 3, "barClass": "small-bar" }
+            { "label": "American Funds", "value": "$6.15M" },
+            { "label": "SMA/CIT", "value": "$2.05M" }
           ]
         },
          {
@@ -65,9 +65,19 @@
           "cssClass": "top-funds-column",
           "title": "Top Funds - YTD Sales",
           "items": [
-             { "label": "AMF", "value": "$2.50M", "barPercentage": 5, "barClass": "tiny-bar" },
-             { "label": "NWF", "value": "$1.80M", "barPercentage": 4, "barClass": "tiny-bar" },
-             { "label": "GIF", "value": "$1.00M", "barPercentage": 2, "barClass": "tiny-bar" }
+             { "label": "AMF", "value": "$2.50M" },
+             { "label": "NWF", "value": "$1.80M" },
+             { "label": "GIF", "value": "$1.00M" }
+          ]
+        },
+        {
+          "id": "data-col-7",
+          "cssClass": "etf-holdings-column",
+          "title": "ETF Holdings",
+          "items": [
+             { "label": "IVV (Core S&P 500)", "value": "$15.80M" },
+             { "label": "AGG (Core Agg Bond)", "value": "$10.50M" },
+             { "label": "EFA (EAFE Index)", "value": "$5.25M" }
           ]
         }
       ]

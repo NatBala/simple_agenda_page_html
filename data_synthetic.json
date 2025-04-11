@@ -17,7 +17,7 @@
           "cssClass": "aum-column",
           "title": "AUM",
           "items": [
-            { "label": "Overall", "value": "$55.20M", "barPercentage": 60, "barClass": "" }
+            { "label": "Overall", "value": "$55.20M" }
           ]
         },
         {
@@ -25,9 +25,9 @@
           "cssClass": "asset-mix-column",
           "title": "Asset Mix",
           "items": [
-            { "label": "U.S. Equity", "value": "$30.10M", "barPercentage": 55, "barClass": "small-bar" },
-            { "label": "International Equity", "value": "$15.05M", "barPercentage": 27, "barClass": "small-bar" },
-            { "label": "Fixed Income", "value": "$10.05M", "barPercentage": 18, "barClass": "small-bar" }
+            { "label": "U.S. Equity", "value": "$30.10M" },
+            { "label": "International Equity", "value": "$15.05M" },
+            { "label": "Fixed Income", "value": "$10.05M" }
           ]
         },
         {
@@ -35,8 +35,8 @@
           "cssClass": "sales-column",
           "title": "Sales",
           "items": [
-             { "label": "LY Sales", "value": "$12.50M", "barPercentage": 40, "barClass": "small-bar" },
-             { "label": "YTD Sales", "value": "$1.80M", "barPercentage": 10, "barClass": "small-bar" }
+             { "label": "LY Sales", "value": "$12.50M" },
+             { "label": "YTD Sales", "value": "$1.80M" }
           ]
         },
          {
@@ -44,8 +44,8 @@
           "cssClass": "top-funds-column",
           "title": "Top Funds - YTD Sales",
           "items": [
-             { "label": "IGRO", "value": "$1.20M", "barPercentage": 8, "barClass": "tiny-bar" },
-             { "label": "AMCAP", "value": "$0.60M", "barPercentage": 4, "barClass": "tiny-bar" }
+             { "label": "IGRO", "value": "$1.20M" },
+             { "label": "AMCAP", "value": "$0.60M" }
           ]
         }
       ]

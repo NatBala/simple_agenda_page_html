@@ -17,7 +17,7 @@
           "cssClass": "aum-column",
           "title": "AUM",
           "items": [
-            { "label": "Overall", "value": "$138.74M", "barPercentage": 85, "barClass": "" }
+            { "label": "Overall", "value": "$138.74M" }
           ]
         },
         {
@@ -25,10 +25,10 @@
           "cssClass": "asset-mix-column",
           "title": "Asset Mix",
           "items": [
-            { "label": "Municipal Bond", "value": "$133.67M", "barPercentage": 90, "barClass": "small-bar" },
-            { "label": "International Equity", "value": "$2.78M", "barPercentage": 15, "barClass": "small-bar" },
-            { "label": "U.S. Equity", "value": "$1.87M", "barPercentage": 10, "barClass": "small-bar" },
-            { "label": "Others", "value": "$0.42M", "barPercentage": 5, "barClass": "small-bar" }
+            { "label": "Municipal Bond", "value": "$133.67M" },
+            { "label": "International Equity", "value": "$2.78M" },
+            { "label": "U.S. Equity", "value": "$1.87M" },
+            { "label": "Others", "value": "$0.42M" }
           ]
         },
         {
@@ -36,10 +36,10 @@
           "cssClass": "morningstar-column",
           "title": "Morningstar Ownership",
           "items": [
-            { "label": "Muni California Long", "value": "$96.16M", "barPercentage": 80, "barClass": "small-bar" },
-            { "label": "Muni National Interm", "value": "$37.51M", "barPercentage": 40, "barClass": "small-bar" },
-            { "label": "Global Large-Stock", "value": "—", "barPercentage": null, "barClass": "small-bar" },
-            { "label": "Growth", "value": "$1.50M", "barPercentage": 8, "barClass": "small-bar" }
+            { "label": "Muni California Long", "value": "$96.16M" },
+            { "label": "Muni National Interm", "value": "$37.51M" },
+            { "label": "Global Large-Stock", "value": "—" },
+            { "label": "Growth", "value": "$1.50M" }
           ]
         },
         {
@@ -47,8 +47,8 @@
           "cssClass": "sales-column",
           "title": "Sales",
           "items": [
-             { "label": "LY Sales", "value": "$64.73M", "barPercentage": 75, "barClass": "small-bar" },
-             { "label": "YTD Sales", "value": "$3.18M", "barPercentage": 10, "barClass": "small-bar" }
+             { "label": "LY Sales", "value": "$64.73M" },
+             { "label": "YTD Sales", "value": "$3.18M" }
           ]
         },
         {
@@ -56,7 +56,7 @@
           "cssClass": "ytd-vehicle-column",
           "title": "YTD Vehicle Sales",
           "items": [
-            { "label": "American Funds", "value": "$3.18M", "barPercentage": 15, "barClass": "small-bar" }
+            { "label": "American Funds", "value": "$3.18M" }
           ]
         },
          {
@@ -64,10 +64,10 @@
           "cssClass": "top-funds-column",
           "title": "Top Funds - YTD Sales",
           "items": [
-             { "label": "TEFCA", "value": "$2.85M", "barPercentage": 15, "barClass": "tiny-bar" },
-             { "label": "TEBF", "value": "$0.33M", "barPercentage": 5, "barClass": "tiny-bar" },
-             { "label": "AMF", "value": "$0.00M", "barPercentage": 0, "barClass": "tiny-bar" },
-             { "label": "AMBAL", "value": "$0.00M", "barPercentage": 0, "barClass": "tiny-bar" }
+             { "label": "TEFCA", "value": "$2.85M" },
+             { "label": "TEBF", "value": "$0.33M" },
+             { "label": "AMF", "value": "$0.00M" },
+             { "label": "AMBAL", "value": "$0.00M" }
           ]
         }
       ]

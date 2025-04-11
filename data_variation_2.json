@@ -17,7 +17,7 @@
           "cssClass": "aum-column",
           "title": "AUM",
           "items": [
-            { "label": "Overall", "value": "$88.15M", "barPercentage": 75, "barClass": "" }
+            { "label": "Overall", "value": "$88.15M" }
           ]
         },
         {
@@ -25,8 +25,8 @@
           "cssClass": "asset-mix-column",
           "title": "Asset Mix",
           "items": [
-            { "label": "U.S. Equity", "value": "$60.00M", "barPercentage": 68, "barClass": "small-bar" },
-            { "label": "Fixed Income", "value": "$28.15M", "barPercentage": 32, "barClass": "small-bar" }
+            { "label": "U.S. Equity", "value": "$60.00M" },
+            { "label": "Fixed Income", "value": "$28.15M" }
           ]
         },
         {
@@ -34,8 +34,8 @@
           "cssClass": "morningstar-column",
           "title": "Morningstar Ownership",
           "items": [
-            { "label": "Muni National Interm", "value": "$25.00M", "barPercentage": 30, "barClass": "small-bar" },
-            { "label": "Global Large-Stock", "value": "$10.50M", "barPercentage": 12, "barClass": "small-bar" }
+            { "label": "Muni National Interm", "value": "$25.00M" },
+            { "label": "Global Large-Stock", "value": "$10.50M" }
           ]
         }
       ]

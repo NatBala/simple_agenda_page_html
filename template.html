@@ -40,16 +40,9 @@
                         <h3>{{ column.title }}</h3>
                         {% for item in column['items'] %}
                         <div class="data-item"><span>{{ item.label }}</span><span class="value">{{ item.value }}</span></div>
-                        <div class="bar-chart-container {{ item.barClass }}">
-                            {% if item.barPercentage is not none %}
-                                {# Apply width based on percentage ONLY if it's NOT the first item #}
-                                {% if not loop.first %}
-                                    <div class="bar" style="width: {{ item.barPercentage }}%;"></div>
-                                {% else %}
-                                    {# First item's bar width will be set purely by CSS #}
-                                    <div class="bar"></div> 
-                                {% endif %}
-                            {% endif %}
+                        <div class="bar-chart-container">
+                            {# Width now set by pre-calculated pixel value #}
+                            <div class="bar" style="width: {{ item.rendered_width_px }}px;"></div>
                         </div>
                         {% endfor %}
                     </div>
@@ -103,8 +96,6 @@
                     {% endfor %}
                 </div>
             </section>
-
-            <div class="spacer"></div>
         </div> <!-- /.main-content -->
 
         <footer class="footer">
