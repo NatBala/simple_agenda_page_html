@@ -140,35 +140,31 @@ h3 { /* Column Sub-headings */
     margin-left: calc(var(--space-unit) * 0.8);
 }
 .data-grid {
-    display: grid; /* Changed from flex */
-    grid-template-columns: repeat(4, minmax(130px, 1fr)); /* Define 4 columns */
-    /* justify-content: flex-start; REMOVED - Grid uses gap */
+    display: flex; /* Changed back from grid */
+    justify-content: flex-start; /* Align items to the start */
     gap: 15px;
     width: 100%;
     margin-bottom: calc(var(--space-unit) * 0.8);
-    /* flex-wrap: wrap; REMOVED */
+    flex-wrap: wrap; /* Allow wrapping */
 }
 .data-column { 
     padding: 0; 
-    /* flex-grow: 1; REMOVED */
-    /* flex-basis: 150px; REMOVED */
-    /* min-width: 130px; REMOVED - Handled by grid template */
+    flex-grow: 1; /* Allow columns to grow */
+    flex-basis: 150px; /* Restore flex basis */
+    min-width: 130px; /* Restore min-width */
 }
 .data-item {
     display: flex;
-    /* justify-content: space-between; REMOVED */
     align-items: flex-start; /* Changed from baseline */
     font-size: 0.9em;
     line-height: var(--line-height-tight);
     margin-bottom: calc(var(--space-unit) * 0.3);
-    /* white-space: nowrap; REMOVED */
 }
 .data-item span:first-child {
     color: var(--cg-grey-text-medium);
     padding-right: calc(var(--space-unit) * 0.7);
     display: inline-block; /* Ensure width is applied */
     width: 90px; /* Keep fixed width for label alignment */
-    /* vertical-align: top; REMOVED */
 }
 .data-item .value {
     flex-shrink: 0;
@@ -369,11 +365,14 @@ hr.section-divider {
     .page-container {
         width: 100% !important; padding: 0 !important; margin: 0 !important;
         border: none !important; box-shadow: none !important;
-        display: flex !important; flex-direction: column !important;
-        min-height: 0 !important; height: auto !important;
+        display: block !important; /* Use block layout for print */
+        height: auto !important;   /* Let content determine height */
+        min-height: auto !important;
+        /* flex-direction: column; REMOVED */
     }
 
-    .spacer { display: block !important; flex-grow: 1; }
+    .spacer { display: none !important; } /* Hide screen spacer */
+    .main-content { flex-grow: 0 !important; } /* Don't force growth in print */
 
     /* Force Colors & Backgrounds */
     .internal-use { color: var(--cg-red-notice) !important; }
@@ -402,12 +401,18 @@ hr.section-divider {
     /* Force Layouts */
     .header-main, .data-grid, .team-grid {
         display: flex !important;
-        flex-wrap: nowrap !important;
     }
 
     /* Prevent Breaks */
     .topic-item, .team-member, .data-column { page-break-inside: avoid !important; }
     .section-heading, h3, .greeting, .disclaimer-source, .footer, hr.section-divider { page-break-before: avoid !important; page-break-after: avoid !important; }
 
-    .footer { margin-top: auto !important; padding-top: calc(var(--space-unit)*1) !important; flex-shrink: 0; }
+    .footer {
+        margin-top: 2em !important; /* Use fixed margin instead of auto */
+        padding-top: calc(var(--space-unit)*1) !important; 
+        flex-shrink: 0; /* Keep this */
+        text-align: left !important; /* Ensure left alignment */
+        page-break-before: avoid !important; 
+        position: static !important; /* Ensure normal flow */
+    }
 }
