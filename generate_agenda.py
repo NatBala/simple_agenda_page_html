@@ -2,11 +2,11 @@ import json
 from jinja2 import Environment, FileSystemLoader
 import os
 import argparse
-import pathlib # Keep pathlib for robust path handling
+import pathlib # Keep pathlib
 
 def generate_html_agenda(data_file, template_file, output_file):
     """Generates an HTML agenda file from JSON data and a Jinja2 template.
-    
+
     Args:
         data_file (str): Path to the JSON data file.
         template_file (str): Path to the Jinja2 HTML template file.
@@ -47,8 +47,10 @@ def generate_html_agenda(data_file, template_file, output_file):
         print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
+    # Updated description
     parser = argparse.ArgumentParser(description="Generate HTML agenda from JSON data and a template.")
     parser.add_argument("data_file", help="Path to the input JSON data file.")
+    # Updated output help text
     parser.add_argument("-o", "--output", default="generated_agenda.html", 
                         help="Path for the output HTML file (default: generated_agenda.html).")
     parser.add_argument("-t", "--template", default="template.html", 
