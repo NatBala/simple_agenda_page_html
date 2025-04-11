@@ -140,35 +140,35 @@ h3 { /* Column Sub-headings */
     margin-left: calc(var(--space-unit) * 0.8);
 }
 .data-grid {
-    display: flex;
-    justify-content: space-between;
+    display: grid; /* Changed from flex */
+    grid-template-columns: repeat(4, minmax(130px, 1fr)); /* Define 4 columns */
+    /* justify-content: flex-start; REMOVED - Grid uses gap */
     gap: 15px;
     width: 100%;
     margin-bottom: calc(var(--space-unit) * 0.8);
-    flex-wrap: nowrap;
+    /* flex-wrap: wrap; REMOVED */
 }
-.data-column { padding: 0; flex-shrink: 0; }
-.aum-column { flex-basis: 18%; }
-.asset-mix-column { flex-basis: 27%; }
-.morningstar-column { flex-basis: 27%; }
-.sales-column { flex-basis: 18%; }
-.ytd-vehicle-column { flex-basis: 27%; }
-.top-funds-column { flex-basis: 27%; }
-
+.data-column { 
+    padding: 0; 
+    /* flex-grow: 1; REMOVED */
+    /* flex-basis: 150px; REMOVED */
+    /* min-width: 130px; REMOVED - Handled by grid template */
+}
 .data-item {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    /* justify-content: space-between; REMOVED */
+    align-items: flex-start; /* Changed from baseline */
     font-size: 0.9em;
     line-height: var(--line-height-tight);
     margin-bottom: calc(var(--space-unit) * 0.3);
-    white-space: nowrap;
+    /* white-space: nowrap; REMOVED */
 }
 .data-item span:first-child {
     color: var(--cg-grey-text-medium);
-    overflow: hidden;
-    text-overflow: ellipsis;
     padding-right: calc(var(--space-unit) * 0.7);
+    display: inline-block; /* Ensure width is applied */
+    width: 90px; /* Keep fixed width for label alignment */
+    /* vertical-align: top; REMOVED */
 }
 .data-item .value {
     flex-shrink: 0;

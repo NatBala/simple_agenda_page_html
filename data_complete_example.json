@@ -1,0 +1,141 @@
+{
+    "clientInfo": {
+      "name": "Comprehensive Wealth Partners - Seattle, 98101",
+      "addressLine1": "720 Olive Way, Suite 1400",
+      "addressLine2": "Seattle, WA, 98101",
+      "meetingDate": "July 10, 2025",
+      "internalUseOnly": false,
+      "logoPath": "capital_group_logo_standard.png"
+    },
+    "assetsSection": {
+      "heading": "Your Comprehensive Capital Group Assets",
+      "subHeading": "(in millions USD, as of June 2025)",
+      "disclaimer": "Reflects assets held at Capital Group. Source: CG Internal Systems.",
+      "columns": [
+        {
+          "id": "data-col-1",
+          "cssClass": "aum-column",
+          "title": "AUM",
+          "items": [
+            { "label": "Overall", "value": "$210.50M", "barPercentage": 90, "barClass": "" }
+          ]
+        },
+        {
+          "id": "data-col-2",
+          "cssClass": "asset-mix-column",
+          "title": "Asset Mix",
+          "items": [
+            { "label": "U.S. Equity", "value": "$105.25M", "barPercentage": 50, "barClass": "small-bar" },
+            { "label": "International Equity", "value": "$63.15M", "barPercentage": 30, "barClass": "small-bar" },
+            { "label": "Municipal Bond", "value": "$31.57M", "barPercentage": 15, "barClass": "small-bar" },
+            { "label": "Other Fixed Income", "value": "$10.53M", "barPercentage": 5, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-3",
+          "cssClass": "morningstar-column",
+          "title": "Morningstar Ownership",
+          "items": [
+            { "label": "US Large-Cap Blend", "value": "$84.20M", "barPercentage": 40, "barClass": "small-bar" },
+            { "label": "Foreign Large-Cap Growth", "value": "$52.62M", "barPercentage": 25, "barClass": "small-bar" },
+            { "label": "Muni National Interm", "value": "$31.57M", "barPercentage": 15, "barClass": "small-bar" },
+            { "label": "Intermediate Core Bond", "value": "$10.53M", "barPercentage": 5, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-4",
+          "cssClass": "sales-column",
+          "title": "Sales",
+          "items": [
+             { "label": "LY Sales", "value": "$45.00M", "barPercentage": 65, "barClass": "small-bar" },
+             { "label": "YTD Sales", "value": "$8.20M", "barPercentage": 15, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-5",
+          "cssClass": "ytd-vehicle-column",
+          "title": "YTD Vehicle Sales",
+          "items": [
+            { "label": "American Funds", "value": "$6.15M", "barPercentage": 12, "barClass": "small-bar" },
+            { "label": "SMA/CIT", "value": "$2.05M", "barPercentage": 3, "barClass": "small-bar" }
+          ]
+        },
+         {
+          "id": "data-col-6",
+          "cssClass": "top-funds-column",
+          "title": "Top Funds - YTD Sales",
+          "items": [
+             { "label": "AMF", "value": "$2.50M", "barPercentage": 5, "barClass": "tiny-bar" },
+             { "label": "NWF", "value": "$1.80M", "barPercentage": 4, "barClass": "tiny-bar" },
+             { "label": "GIF", "value": "$1.00M", "barPercentage": 2, "barClass": "tiny-bar" }
+          ]
+        }
+      ]
+    },
+    "discussionTopics": [
+      {
+        "title": "Investment Strategy Update",
+        "points": [
+          {"text": "Review of global market conditions", "link": "#"},
+          {"text": "Alignment with long-term goals", "link": null},
+          {"text": "Potential tactical adjustments", "link": "#"}
+        ]
+      },
+      {
+        "title": "Practice Management Resources",
+        "points": [
+          {"text": "Upcoming advisor workshops", "link": null},
+          {"text": "Client communication templates", "link": "#"}
+        ]
+      },
+       {
+        "title": "Wealth Planning Focus",
+        "points": [
+          {"text": "Generational wealth transfer considerations", "link": null}
+        ]
+      },
+       {
+        "title": "Funds for Discussion:",
+        "points": [
+          {"text": "Growth Fund of America (AGTHX)", "link": null},
+          {"text": "New Perspective Fund (ANWPX)", "link": null}
+        ]
+      }
+    ],
+    "team": [
+      {
+        "type": "member",
+        "name": "Brandon Ma",
+        "title": "Relationship Manager",
+        "email": "brandon.ma@capgroup.com",
+        "phone": "(123) 456-7890",
+        "imagePath": "placeholder_male.png"
+      },
+       {
+        "type": "qrCode", 
+        "imagePath": "placeholder_qr.png",
+        "linkText": "Schedule a call",
+        "linkUrl": "#"
+      },
+        {
+        "type": "member",
+        "name": "Rebecca Smith",
+        "title": "Relationship Specialist",
+        "email": "rebecca.smith@capgroup.com",
+        "phone": null, 
+        "imagePath": "placeholder_female1.png"
+      },
+        {
+        "type": "member",
+        "name": "Becky Manning",
+        "title": "Sales Support Coordinator",
+        "email": "becky.manning@capgroup.com",
+        "phone": "(987) 654-3210",
+        "imagePath": "placeholder_female2.png"
+      }
+    ],
+     "footer": {
+         "line1": "Investments are not FDIC-insured, nor are they deposits of or guaranteed by a bank or any other entity, so they may lose value.",
+         "line2": "For institutional investors and financial professionals only. Not for use with the public."
+     }
+  } 
