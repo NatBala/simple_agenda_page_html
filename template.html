@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Agenda - Capital Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+
+        <header class="header">
+            <div class="header-top">
+                 {% if clientInfo.internalUseOnly %}<span class="internal-use">For Internal use only</span>{% endif %}
+            </div>
+            <div class="header-main">
+                <div class="address-date">
+                    <p class="recipient"><strong>{{ clientInfo.name }}</strong></p>
+                    <p class="recipient-address">{{ clientInfo.addressLine1 }}, {{ clientInfo.addressLine2 }}</p>
+                    <p class="date">{{ clientInfo.meetingDate }}</p>
+                </div>
+                <div class="logo">
+                    <img src="{{ clientInfo.logoPath }}" alt="Capital Group Logo">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <section class="greeting">
+                <p>Thank you for your continued trust in us. We look forward to our next meeting.</p>
+            </section>
+
+            <section class="data-section">
+                <h2 class="data-main-heading">{{ assetsSection.heading }} <span class="sub-heading">{{ assetsSection.subHeading }}</span></h2>
+
+                {# Removed fixed slicing - now looping through all columns in one grid #}
+                <div class="data-grid">
+                    {% for column in assetsSection.columns %}
+                    <div class="data-column {{ column.cssClass }}">
+                        <h3>{{ column.title }}</h3>
+                        {% for item in column['items'] %}
+                        <div class="data-item"><span>{{ item.label }}</span><span class="value">{{ item.value }}</span></div>
+                        <div class="bar-chart-container {{ item.barClass }}">
+                            {% if item.barPercentage is not none %}
+                                {# Apply width based on percentage ONLY if it's NOT the first item #}
+                                {% if not loop.first %}
+                                    <div class="bar" style="width: {{ item.barPercentage }}%;"></div>
+                                {% else %}
+                                    {# First item's bar width will be set purely by CSS #}
+                                    <div class="bar"></div> 
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section class="disclaimer-source">
+                 <p>{{ assetsSection.disclaimer }}</p>
+            </section>
+
+            <section class="topics-section">
+                <h2>Topics for Discussion</h2>
+                {% for topic in discussionTopics %}
+                <div class="topic-item">
+                    <p class="topic-header"><strong>{{ loop.index }}. {{ topic.title }}</strong></p>
+                    <ul>
+                        {% for point in topic.points %}
+                        <li>{{ point.text }}{% if point.link %} (<a href="{{ point.link }}">learn more</a>){% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </section>
+
+            <section class="notes-section">
+                 <h2>What's on Your Mind?</h2>
+                 <div class="notes-box"></div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="team-section">
+                <h2>Your Team</h2>
+                <div class="team-grid">
+                    {% for member in team %}
+                        {% if member.type == 'member' %}
+                        <div class="team-member">
+                            <img src="{{ member.imagePath }}" alt="{{ member.name }}">
+                            <p class="name"><strong>{{ member.name }}</strong></p>
+                            <p class="title">{{ member.title }}</p>
+                            <p class="email"><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+                            {% if member.phone %}<p class="phone">{{ member.phone }}</p>{% endif %}
+                        </div>
+                        {% elif member.type == 'qrCode' %}
+                         <div class="team-member schedule-section">
+                            <img src="{{ member.imagePath }}" alt="QR Code for Scheduling" class="qr-code">
+                            <a href="{{ member.linkUrl }}" class="schedule-link">{{ member.linkText }}</a>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+        </div> <!-- /.main-content -->
+
+        <footer class="footer">
+            <p>{{ footer.line1 }}</p>
+            <p>{{ footer.line2 }}</p>
+        </footer>
+
+    </div> <!-- /page-container -->
+</body>
+</html>

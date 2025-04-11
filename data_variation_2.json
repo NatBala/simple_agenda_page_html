@@ -1,0 +1,78 @@
+{
+    "clientInfo": {
+      "name": "Windy City Advisors - Chicago, 60606",
+      "addressLine1": "55 W Monroe St",
+      "addressLine2": "Chicago, IL, 60606",
+      "meetingDate": "June 1, 2025",
+      "internalUseOnly": true,
+      "logoPath": "capital_group_logo_standard.png"
+    },
+    "assetsSection": {
+      "heading": "Your CG Assets Overview",
+      "subHeading": "(in millions USD, as of May 2025)",
+      "disclaimer": "Internal data snapshot. Subject to change.",
+      "columns": [
+        {
+          "id": "data-col-1",
+          "cssClass": "aum-column",
+          "title": "AUM",
+          "items": [
+            { "label": "Overall", "value": "$88.15M", "barPercentage": 75, "barClass": "" }
+          ]
+        },
+        {
+          "id": "data-col-2",
+          "cssClass": "asset-mix-column",
+          "title": "Asset Mix",
+          "items": [
+            { "label": "U.S. Equity", "value": "$60.00M", "barPercentage": 68, "barClass": "small-bar" },
+            { "label": "Fixed Income", "value": "$28.15M", "barPercentage": 32, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-3",
+          "cssClass": "morningstar-column",
+          "title": "Morningstar Ownership",
+          "items": [
+            { "label": "Muni National Interm", "value": "$25.00M", "barPercentage": 30, "barClass": "small-bar" },
+            { "label": "Global Large-Stock", "value": "$10.50M", "barPercentage": 12, "barClass": "small-bar" }
+          ]
+        }
+      ]
+    },
+    "discussionTopics": [
+      {
+        "title": "Portfolio Review",
+        "points": [
+          {"text": "Performance analysis Q1 2025", "link": null},
+          {"text": "Proposed allocation adjustments", "link": "#"}
+        ]
+      },
+      {
+        "title": "Economic Update",
+        "points": [
+          {"text": "Interest rate outlook", "link": null}
+        ]
+      }
+    ],
+    "team": [
+      {
+        "type": "member",
+        "name": "Brandon Ma",
+        "title": "Relationship Manager",
+        "email": "brandon.ma@capgroup.com",
+        "phone": "(123) 456-7890",
+        "imagePath": "placeholder_male.png"
+      },
+       {
+        "type": "qrCode",
+        "imagePath": "placeholder_qr.png",
+        "linkText": "Visit our Portal",
+        "linkUrl": "#"
+      }
+    ],
+     "footer": {
+         "line1": "Investments are not FDIC-insured, nor are they deposits of or guaranteed by a bank or any other entity, so they may lose value.",
+         "line2": "For institutional investors and financial professionals only. Not for use with the public."
+     }
+  } 

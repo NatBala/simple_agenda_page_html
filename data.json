@@ -1,0 +1,141 @@
+{
+    "clientInfo": {
+      "name": "Sand Hill Global Advisors, LLC - San Francisco, 94111",
+      "addressLine1": "4 Embarcadero Ctr Ste 3150, #",
+      "addressLine2": "San Francisco, CA, 94111",
+      "meetingDate": "April 9, 2025",
+      "internalUseOnly": true,
+      "logoPath": "capital_group_logo_standard.png"
+    },
+    "assetsSection": {
+      "heading": "Your Capital Group Assets",
+      "subHeading": "(in millions of USD, as of March 2025)",
+      "disclaimer": "May not accurately reflect all assets and sales due to reporting variables. Source: Capital Group.",
+      "columns": [
+        {
+          "id": "data-col-1",
+          "cssClass": "aum-column",
+          "title": "AUM",
+          "items": [
+            { "label": "Overall", "value": "$138.74M", "barPercentage": 85, "barClass": "" }
+          ]
+        },
+        {
+          "id": "data-col-2",
+          "cssClass": "asset-mix-column",
+          "title": "Asset Mix",
+          "items": [
+            { "label": "Municipal Bond", "value": "$133.67M", "barPercentage": 90, "barClass": "small-bar" },
+            { "label": "International Equity", "value": "$2.78M", "barPercentage": 15, "barClass": "small-bar" },
+            { "label": "U.S. Equity", "value": "$1.87M", "barPercentage": 10, "barClass": "small-bar" },
+            { "label": "Others", "value": "$0.42M", "barPercentage": 5, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-3",
+          "cssClass": "morningstar-column",
+          "title": "Morningstar Ownership",
+          "items": [
+            { "label": "Muni California Long", "value": "$96.16M", "barPercentage": 80, "barClass": "small-bar" },
+            { "label": "Muni National Interm", "value": "$37.51M", "barPercentage": 40, "barClass": "small-bar" },
+            { "label": "Global Large-Stock", "value": "—", "barPercentage": null, "barClass": "small-bar" },
+            { "label": "Growth", "value": "$1.50M", "barPercentage": 8, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-4",
+          "cssClass": "sales-column",
+          "title": "Sales",
+          "items": [
+             { "label": "LY Sales", "value": "$64.73M", "barPercentage": 75, "barClass": "small-bar" },
+             { "label": "YTD Sales", "value": "$3.18M", "barPercentage": 10, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-5",
+          "cssClass": "ytd-vehicle-column",
+          "title": "YTD Vehicle Sales",
+          "items": [
+            { "label": "American Funds", "value": "$3.18M", "barPercentage": 15, "barClass": "small-bar" }
+          ]
+        },
+         {
+          "id": "data-col-6",
+          "cssClass": "top-funds-column",
+          "title": "Top Funds - YTD Sales",
+          "items": [
+             { "label": "TEFCA", "value": "$2.85M", "barPercentage": 15, "barClass": "tiny-bar" },
+             { "label": "TEBF", "value": "$0.33M", "barPercentage": 5, "barClass": "tiny-bar" },
+             { "label": "AMF", "value": "$0.00M", "barPercentage": 0, "barClass": "tiny-bar" },
+             { "label": "AMBAL", "value": "$0.00M", "barPercentage": 0, "barClass": "tiny-bar" }
+          ]
+        }
+      ]
+    },
+    "discussionTopics": [
+      {
+        "title": "Investment Practice Excellence",
+        "points": [
+          {"text": "Municipal bond investing: Key to infrastructure and steady income", "link": "#"},
+          {"text": "Portfolio construction insights transform registered investment advisors", "link": "#"}
+        ]
+      },
+      {
+        "title": "Practice Management",
+        "points": [
+          {"text": "Comprehensive support boosts elite RIA firms", "link": "#"},
+          {"text": "Master the art of acquiring the ideal client", "link": null}
+        ]
+      },
+       {
+        "title": "Wealth Planning Insights",
+        "points": [
+          {"text": "Deepen client engagement to become the advisor of choice", "link": null},
+          {"text": "Investing internationally in a changing world", "link": "#"}
+        ]
+      },
+       {
+        "title": "Funds for Discussion:",
+        "points": [
+          {"text": "The Investment Company of America (ICAFX)", "link": null},
+          {"text": "Washington Mutual Investors Fund (WMFFX)", "link": null}
+        ]
+      }
+    ],
+    "team": [
+      {
+        "type": "member",
+        "name": "Brandon Ma",
+        "title": "Relationship Manager",
+        "email": "brandon.ma@capgroup.com",
+        "phone": "(123) 456-7890",
+        "imagePath": "placeholder_male.png"
+      },
+       {
+        "type": "qrCode",
+        "imagePath": "placeholder_qr.png",
+        "linkText": "Schedule a call",
+        "linkUrl": "#"
+      },
+        {
+        "type": "member",
+        "name": "Rebecca Smith",
+        "title": "Relationship Specialist",
+        "email": "rebecca.smith@capgroup.com",
+        "phone": null,
+        "imagePath": "placeholder_female1.png"
+      },
+        {
+        "type": "member",
+        "name": "Becky Manning",
+        "title": "Sales Support Coordinator",
+        "email": "becky.manning@capgroup.com",
+        "phone": "(987) 654-3210",
+        "imagePath": "placeholder_female2.png"
+      }
+    ],
+     "footer": {
+         "line1": "Investments are not FDIC-insured, nor are they deposits of or guaranteed by a bank or any other entity, so they may lose value.",
+         "line2": "For institutional investors and financial professionals only. Not for use with the public."
+     }
+  }

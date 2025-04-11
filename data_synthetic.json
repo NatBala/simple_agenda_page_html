@@ -1,0 +1,102 @@
+{
+    "clientInfo": {
+      "name": "Example Advisory Group - New York, 10001",
+      "addressLine1": "123 Main St, Suite 500",
+      "addressLine2": "New York, NY, 10001",
+      "meetingDate": "May 15, 2025",
+      "internalUseOnly": false,
+      "logoPath": "capital_group_logo_standard.png"
+    },
+    "assetsSection": {
+      "heading": "Your Capital Group Relationship",
+      "subHeading": "(in millions USD, as of April 2025)",
+      "disclaimer": "Data illustrative only. Source: Capital Group Internal.",
+      "columns": [
+        {
+          "id": "data-col-1",
+          "cssClass": "aum-column",
+          "title": "AUM",
+          "items": [
+            { "label": "Overall", "value": "$55.20M", "barPercentage": 60, "barClass": "" }
+          ]
+        },
+        {
+          "id": "data-col-2",
+          "cssClass": "asset-mix-column",
+          "title": "Asset Mix",
+          "items": [
+            { "label": "U.S. Equity", "value": "$30.10M", "barPercentage": 55, "barClass": "small-bar" },
+            { "label": "International Equity", "value": "$15.05M", "barPercentage": 27, "barClass": "small-bar" },
+            { "label": "Fixed Income", "value": "$10.05M", "barPercentage": 18, "barClass": "small-bar" }
+          ]
+        },
+        {
+          "id": "data-col-4",
+          "cssClass": "sales-column",
+          "title": "Sales",
+          "items": [
+             { "label": "LY Sales", "value": "$12.50M", "barPercentage": 40, "barClass": "small-bar" },
+             { "label": "YTD Sales", "value": "$1.80M", "barPercentage": 10, "barClass": "small-bar" }
+          ]
+        },
+         {
+          "id": "data-col-6",
+          "cssClass": "top-funds-column",
+          "title": "Top Funds - YTD Sales",
+          "items": [
+             { "label": "IGRO", "value": "$1.20M", "barPercentage": 8, "barClass": "tiny-bar" },
+             { "label": "AMCAP", "value": "$0.60M", "barPercentage": 4, "barClass": "tiny-bar" }
+          ]
+        }
+      ]
+    },
+    "discussionTopics": [
+      {
+        "title": "Market Outlook & Strategy",
+        "points": [
+          {"text": "Navigating current market volatility", "link": "#"},
+          {"text": "Opportunities in emerging markets", "link": null}
+        ]
+      },
+      {
+        "title": "Practice Management",
+        "points": [
+          {"text": "Leveraging technology for client communication", "link": null}
+        ]
+      },
+       {
+        "title": "Funds for Discussion:",
+        "points": [
+          {"text": "Capital Group Global Equity Fund (CGGEX)", "link": null}
+        ]
+      }
+    ],
+    "team": [
+      {
+        "type": "member",
+        "name": "Brandon Ma",
+        "title": "Relationship Manager",
+        "email": "brandon.ma@capgroup.com",
+        "phone": "(123) 456-7890",
+        "imagePath": "placeholder_male.png"
+      },
+       {
+        "type": "qrCode",
+        "imagePath": "placeholder_qr.png",
+        "linkText": "Schedule a follow-up",
+        "linkUrl": "#"
+      },
+        {
+        "type": "member",
+        "name": "Rebecca Smith",
+        "title": "Relationship Specialist",
+        "email": "rebecca.smith@capgroup.com",
+        "phone": null,
+        "imagePath": "placeholder_female1.png"
+      }
+    ],
+     "footer": {
+         "line1": "Investments are not FDIC-insured, nor are they deposits of or guaranteed by a bank or any other entity, so they may lose value.",
+         "line2": "For institutional investors and financial professionals only. Not for use with the public."
+     }
+  } 
